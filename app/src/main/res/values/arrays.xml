@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="types_structure">
+
+        <item>Choisir un type de structure</item>
+        <item>PME</item>
+        <item>Entreprise</item>
+        <item>Commerce</item>
+        <item>Industrie</item>
+        <item>Association</item>
+        <item>Administration</item>
+        <item>Autre</item>
+
+    </string-array>
+
+</resources>

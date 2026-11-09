@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAF9">
+
+    <!-- ================= CONTENU QUI SCROLLE ================= -->
+
+    <ScrollView
+        android:id="@+id/scrollViewDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8FAF9"
+        android:fillViewport="true"
+        android:paddingBottom="90dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="25dp">
+
+            <!-- ================= HEADER ================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Logo -->
+
+                <ImageView
+                    android:id="@+id/imgLogoDashboard"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="Logo Solar Advisor CI"
+                    android:src="@drawable/solar_advisor_logo"
+                    android:scaleType="fitCenter" />
+
+                <!-- Nom application -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SOLAR ADVISOR"
+                        android:textColor="#166534"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="CÔTE D'IVOIRE"
+                        android:textColor="#16A34A"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Profil -->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/btnProfil"-->
+<!--                    android:layout_width="45dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:background="#E8F5EC"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="👤"-->
+<!--                    android:textSize="20sp" />-->
+
+            </LinearLayout>
+
+
+            <!-- ================= SALUTATION ================= -->
+
+            <TextView
+                android:id="@+id/txtBonjour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Bonjour 👋"
+                android:textColor="#111827"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNomStructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Bienvenue sur votre espace"
+                android:textColor="#6B7280"
+                android:textSize="15sp" />
+
+
+            <!-- ================= CARTE PRINCIPALE ================= -->
+
+            <LinearLayout
+                android:id="@+id/cardEvaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_card_green"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <!-- Icône -->
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="#2DB85D"
+                    android:gravity="center"
+                    android:text="☀"
+                    android:textColor="#FFFFFF"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Évaluez votre besoin énergétique"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Obtenez une estimation adaptée à votre structure."
+                    android:textColor="#E8F5EC"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnCommencerEvaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Commencer"
+                    android:textColor="#166534"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- ================= EXPLORER ================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Explorer"
+                android:textColor="#111827"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <!-- Cartes -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <!-- Solutions -->
+
+                <LinearLayout
+                    android:id="@+id/cardSolutions"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⌕"
+                        android:textColor="#16A34A"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Solutions"
+                        android:textColor="#166534"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explorer les solutions"
+                        android:textColor="#6B7280"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <!-- Fournisseurs -->
+
+                <LinearLayout
+                    android:id="@+id/cardFournisseurs"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⌂"
+                        android:textColor="#16A34A"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Fournisseurs"
+                        android:textColor="#166534"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voir les partenaires"
+                        android:textColor="#6B7280"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- ================= DERNIÈRES RECHERCHES ================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Vos dernières recherches"
+                android:textColor="#111827"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="14dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aucune recherche récente"
+                    android:textColor="#6B7280"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Commencez une évaluation énergétique"
+                    android:textColor="#16A34A"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- espace supplémentaire avant le menu -->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================================== -->
+    <!--                 MENU FIXE EN BAS                      -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:elevation="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <!-- ACCUEIL -->
+
+        <LinearLayout
+            android:id="@+id/navAccueil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Accueil"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Accueil"
+                android:textColor="#16A34A"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- ANALYSE -->
+
+        <LinearLayout
+            android:id="@+id/navAnalyse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Analyse"
+                android:src="@drawable/ic_analystics" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Analyse"
+                android:textColor="#374151"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- FOURNISSEURS -->
+
+        <LinearLayout
+            android:id="@+id/navFournisseurs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Fournisseurs"
+                android:src="@drawable/ic_store" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Fournisseurs"
+                android:textColor="#374151"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- PROFIL -->
+
+        <LinearLayout
+            android:id="@+id/navProfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Profil"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Profil"
+                android:textColor="#374151"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

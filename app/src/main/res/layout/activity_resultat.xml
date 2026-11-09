@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F8FAF9"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
+                android:paddingTop="35dp"
+                android:paddingBottom="35dp">
+
+                <!-- Retour -->
+
+                <TextView
+                    android:id="@+id/btnRetourResultat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="‹"
+                    android:textColor="#166534"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <!-- Titre -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Votre analyse énergétique"
+                    android:textColor="#111827"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Voici une première estimation adaptée aux informations que vous avez fournies."
+                    android:textColor="#6B7280"
+                    android:textSize="15sp" />
+
+                <!-- Carte principale -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rounded_green_card"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="☀️  SOLUTION RECOMMANDÉE"
+                        android:textColor="#166534"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Installation solaire photovoltaïque"
+                        android:textColor="#111827"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Une solution permettant de réduire votre dépendance au réseau électrique et de mieux maîtriser votre consommation."
+                        android:textColor="#374151"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Titre dimensionnement -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Dimensionnement estimatif"
+                    android:textColor="#111827"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <!-- Puissance -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/rounded_card"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚡ Puissance solaire recommandée"
+                        android:textColor="#6B7280"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtPuissance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="8,5 kWc"
+                        android:textColor="#166534"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Production -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_card"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="☀️ Production solaire estimée"
+                        android:textColor="#6B7280"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtProduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="XX kWh / an"
+                        android:textColor="#166534"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Panneaux et onduleur -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- Panneaux -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔆 Panneaux"
+                            android:textColor="#6B7280"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtPanneaux"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="16"
+                            android:textColor="#166534"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="panneaux"
+                            android:textColor="#6B7280"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <!-- Onduleur -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔌 Onduleur"
+                            android:textColor="#6B7280"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtOnduleur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="8 kW"
+                            android:textColor="#166534"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="recommandé"
+                            android:textColor="#6B7280"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Estimation du coût -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Estimation du projet"
+                    android:textColor="#111827"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_card"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coût estimatif de l'installation"
+                        android:textColor="#6B7280"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtCout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="X XXX XXX FCFA"
+                        android:textColor="#166534"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Cette estimation est indicative et devra être confirmée par une étude technique."
+                        android:textColor="#6B7280"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- Fournisseurs -->
+
+                <Button
+                    android:id="@+id/btnFournisseurs"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="#16A34A"
+                    android:text="Voir les fournisseurs recommandés"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        layout="@layout/bottom_navigation" />
+</LinearLayout>

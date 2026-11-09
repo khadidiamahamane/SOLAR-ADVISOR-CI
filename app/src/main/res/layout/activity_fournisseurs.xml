@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="25dp">
+
+                <!-- Retour -->
+                <TextView
+                    android:id="@+id/btnRetourFournisseurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="‹"
+                    android:textColor="#1F2937"
+                    android:textSize="38sp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Titre -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Nos partenaires"
+                    android:textColor="#1F3B5B"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Des entreprises de confiance pour vous accompagner dans votre solution énergétique."
+                    android:textColor="#374151"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp" />
+
+                <!-- ===================== -->
+                <!-- SOLARTECH CI -->
+                <!-- ===================== -->
+
+                <LinearLayout
+                    android:id="@+id/cardSolarTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <!-- Logo temporaire -->
+                    <ImageView
+                        android:id="@+id/imgLogoSolarTech"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="Logo SolarTech CI"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_solartech_ci" />
+
+                    <!-- Informations -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SolarTech CI"
+                            android:textColor="#173B68"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Solutions solaires"
+                            android:textColor="#64748B"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✓ Partenaire vérifié"
+                            android:textColor="#00A878"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★   4,8"
+                            android:textColor="#00A878"
+                            android:textSize="14sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <!-- Flèche -->
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="#173B68"
+                        android:textSize="35sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+                <!-- ===================== -->
+                <!-- GREEN ENERGY -->
+                <!-- ===================== -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogoGreenEnergy"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="Logo Green Energy"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_green_energy" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Green Energy"
+                            android:textColor="#173B68"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Onduleurs &amp; Batteries"
+                            android:textColor="#64748B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✓ Partenaire vérifié"
+                            android:textColor="#00A878"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★   4,6"
+                            android:textColor="#00A878"
+                            android:textSize="14sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="#173B68"
+                        android:textSize="35sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+                <!-- ===================== -->
+                <!-- ECOPOWER -->
+                <!-- ===================== -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogoEcoPower"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="Logo EcoPower"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_ecopower" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EcoPower"
+                            android:textColor="#173B68"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Groupes électrogènes"
+                            android:textColor="#64748B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✓ Partenaire vérifié"
+                            android:textColor="#00A878"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★   4,7"
+                            android:textColor="#00A878"
+                            android:textSize="14sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="#173B68"
+                        android:textSize="35sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+                <!-- ===================== -->
+                <!-- ELECTROSAFE -->
+                <!-- ===================== -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogoElectroSafe"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="Logo ElectroSafe"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_electrosafe" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ElectroSafe"
+                            android:textColor="#173B68"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maintenance énergétique"
+                            android:textColor="#64748B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✓ Partenaire vérifié"
+                            android:textColor="#00A878"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★   4,5"
+                            android:textColor="#00A878"
+                            android:textSize="14sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="#173B68"
+                        android:textSize="35sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+                <!-- Message de confiance -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="#F0FDF4"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:text="✓"
+                        android:textColor="#16A34A"
+                        android:textSize="32sp"
+                        android:gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tous nos partenaires sont vérifiés"
+                            android:textColor="#15803D"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Solar Advisor CI sélectionne des entreprises fiables pour vous garantir le meilleur accompagnement."
+                            android:textColor="#64748B"
+                            android:textSize="14sp"
+                            android:layout_marginTop="3dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        layout="@layout/bottom_navigation" />
+</LinearLayout>

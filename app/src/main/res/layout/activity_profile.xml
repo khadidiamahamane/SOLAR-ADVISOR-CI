@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAF9">
+
+    <!-- CONTENU DU PROFIL -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="24dp"
+            android:paddingTop="70dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="100dp">
+
+            <!-- LOGO -->
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="Logo Solar Advisor"
+                android:src="@drawable/solar_advisor_logo"
+                android:scaleType="centerInside" />
+
+
+            <!-- TITRE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Profil de la structure"
+                android:textColor="#374151"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <!-- AVATAR -->
+
+            <TextView
+                android:id="@+id/txtInitiale"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_avatar"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+            <!-- NOM STRUCTURE -->
+
+            <TextView
+                android:id="@+id/txtNomStructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Nom de la structure"
+                android:textColor="#374151"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <!-- TYPE -->
+
+            <TextView
+                android:id="@+id/txtTypeStructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Type de structure"
+                android:textColor="#6B7280"
+                android:textSize="14sp" />
+
+
+            <!-- INFORMATIONS -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="@drawable/bg_profile_info">
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#374151"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtTelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Téléphone"
+                    android:textColor="#374151"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <!-- DECONNEXION -->
+
+            <Button
+                android:id="@+id/btnDeconnexion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:text="Se déconnecter"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#16A34A" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- MENU FIXE -->
+
+    <include
+        android:id="@+id/bottomNavigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

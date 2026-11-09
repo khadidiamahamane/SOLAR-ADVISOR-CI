@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAF9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="30dp">
+
+        <!-- Retour -->
+
+        <TextView
+            android:id="@+id/btnRetourEvaluation4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="‹"
+            android:textColor="#166534"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <!-- Titre -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Évaluation énergétique"
+            android:textColor="#111827"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Quelques dernières informations pour préparer votre estimation."
+            android:textColor="#6B7280"
+            android:textSize="15sp" />
+
+        <!-- Progression -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Étape 4 sur 4"
+            android:textColor="#16A34A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Objectif -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Quel est votre objectif principal ?"
+            android:textColor="#111827"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupObjectif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioReduireFacture"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Réduire ma facture d'électricité"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioCoupures"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Réduire l'impact des coupures"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioAutonomie"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Devenir plus autonome énergétiquement"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioEnvironnement"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Réduire mon impact environnemental"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <!-- Budget -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Quel budget envisagez-vous ?"
+            android:textColor="#111827"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioBudget1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Moins de 1 000 000 FCFA"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBudget2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="1 000 000 – 5 000 000 FCFA"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBudget3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="5 000 000 – 10 000 000 FCFA"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBudget4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Plus de 10 000 000 FCFA"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBudget5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Je ne sais pas encore"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <!-- Délai -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Quand souhaitez-vous réaliser votre projet ?"
+            android:textColor="#111827"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDelai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioDesQuePossible"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Dès que possible"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioTroisMois"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Dans les 3 prochains mois"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioSixMois"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Dans les 6 prochains mois"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioPlusTard"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Plus tard"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <!-- Bouton -->
+
+        <Button
+            android:id="@+id/btnVoirEstimation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#16A34A"
+            android:text="Voir mon estimation"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

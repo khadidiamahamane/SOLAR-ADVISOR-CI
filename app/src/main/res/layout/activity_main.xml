@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#F7FAF7">
+
+    <!-- Illustration temporaire -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/solar_advisor_logo"
+        android:contentDescription="Logo Solar Advisor CI"
+        android:scaleType="fitCenter" />
+
+    <!-- Nom de l'application -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="SOLAR ADVISOR CI"
+        android:textColor="#166534"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Slogan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Votre partenaire pour une énergie durable"
+        android:textColor="#374151"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Trouvez la solution énergétique adaptée à votre structure."
+        android:textColor="#374151"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Bouton Commencer -->
+    <Button
+        android:id="@+id/btnCommencer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:text="Commencer"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:backgroundTint="#16A34A" />
+
+    <!-- Connexion -->
+    <TextView
+        android:id="@+id/txtConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Vous avez déjà un compte ?  Se connecter"
+        android:textColor="#166534"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

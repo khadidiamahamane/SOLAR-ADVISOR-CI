@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F8FAF9"
+        android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingTop="35dp"
+                android:paddingBottom="30dp">
+
+                <!-- Retour -->
+
+                <TextView
+                    android:id="@+id/btnRetour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="‹"
+                    android:textColor="#166534"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <!-- Titre -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Évaluation énergétique"
+                    android:textColor="#111827"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <!-- Introduction -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Commençons par connaître votre structure afin de mieux évaluer vos besoins."
+                    android:textColor="#6B7280"
+                    android:textSize="15sp" />
+
+                <!-- Progression -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Étape 1 sur 4"
+                    android:textColor="#16A34A"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Question -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Quel est le type de votre structure ?"
+                    android:textColor="#111827"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <!-- Choix -->
+
+                <RadioGroup
+                    android:id="@+id/radioGroupStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp">
+
+                    <RadioButton
+                        android:id="@+id/radioHotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Hôtel"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioCommerce"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Commerce"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioEntreprise"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Bureau / Entreprise"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioIndustrie"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Industrie"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioEtablissement"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Établissement"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioSante"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Centre de santé"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioAgricole"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Exploitation agricole"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioAutre"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Autre"
+                        android:textColor="#374151"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <!-- Bouton -->
+
+                <Button
+                    android:id="@+id/btnContinuerEvaluation"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#16A34A"
+                    android:text="Continuer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/bottom_navigation" />
+</LinearLayout>
